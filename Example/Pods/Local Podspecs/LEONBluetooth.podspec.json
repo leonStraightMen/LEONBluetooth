@@ -1,0 +1,22 @@
+{
+  "name": "LEONBluetooth",
+  "version": "0.1.0",
+  "summary": "A short description of LEONBluetooth.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/leonStraightMen/LEONBluetooth",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leonStraightMen": "dengzf.ok@163.com"
+  },
+  "source": {
+    "git": "https://github.com/leonStraightMen/LEONBluetooth.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LEONBluetooth/Classes/**/*"
+}

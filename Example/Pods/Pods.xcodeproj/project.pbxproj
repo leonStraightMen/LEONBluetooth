@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048006BDC3AA1B8C270F8142C067788D /* Pods-LEONBluetooth_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E014E40F60DDBC1F76B278DFECA94585 /* Pods-LEONBluetooth_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05592D4238DB324D2D9F3DDE3F6E0561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4A4ECFC8C60DDA34542C4CB5FC24A06E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		97BA898DFF597D545100BB8206155387 /* Pods-LEONBluetooth_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 324099F9B8DEA7CC33DFFE514DF3AE17 /* Pods-LEONBluetooth_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7CCA8257500383CFD69B9915798C692 /* Pods-LEONBluetooth_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDF169B84C0C1DAB4E2B4E77DAA2C9F /* Pods-LEONBluetooth_Example-dummy.m */; };
+		D12635AB120E2F218961F2535CD08413 /* LEONBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CCDEE6EC796AD3D9B51303730799F0 /* LEONBluetooth.swift */; };
+		D1E5D6651E391FE3F4DA699B576802FF /* Pods-LEONBluetooth_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CA1336B83B603FE6893C26515BE9A /* Pods-LEONBluetooth_Tests-dummy.m */; };
+		DAE871453EE41689413BA4AA6D90B20F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F1BB70C3ECEEA3B2C8CA96B01D2A2270 /* LEONBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CBF4E12372DDB7B8B4F1EEBED70138 /* LEONBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF501DEB30CD02E2283BBF6AB439A679 /* LEONBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D19689201A815887A96ABEF1D067D /* LEONBluetooth-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C85BD86DEE03D40F2B6EB6D7F2CDD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D0F68DD32A30702D7CCDAFBD722B4A;
+			remoteInfo = "Pods-LEONBluetooth_Example";
+		};
+		5B007CA7B6B6975C3762E51B697552E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF674DAB9540ADFDE971FFD2036E0E5;
+			remoteInfo = LEONBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083D28B6840BF5DBD37B2B74AAB4930E /* Pods-LEONBluetooth_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEONBluetooth_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E5E6E2DE88FBE45014A0F8728692292 /* Pods-LEONBluetooth_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEONBluetooth_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		12CCDEE6EC796AD3D9B51303730799F0 /* LEONBluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LEONBluetooth.swift; path = LEONBluetooth/Classes/LEONBluetooth.swift; sourceTree = "<group>"; };
+		19B335C01758819CE1D57504E69B13A7 /* Pods-LEONBluetooth_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEONBluetooth_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2B6CA1336B83B603FE6893C26515BE9A /* Pods-LEONBluetooth_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEONBluetooth_Tests-dummy.m"; sourceTree = "<group>"; };
+		2F97657282CC65878BF9E48A8C80E18B /* Pods-LEONBluetooth_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LEONBluetooth_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		324099F9B8DEA7CC33DFFE514DF3AE17 /* Pods-LEONBluetooth_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEONBluetooth_Tests-umbrella.h"; sourceTree = "<group>"; };
+		32BD41A8E7C802F61CC65DF4CB7C430E /* LEONBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LEONBluetooth.modulemap; sourceTree = "<group>"; };
+		488A9F12B400ACAA1837F1003016C5C3 /* LEONBluetooth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LEONBluetooth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4D2D19689201A815887A96ABEF1D067D /* LEONBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEONBluetooth-dummy.m"; sourceTree = "<group>"; };
+		588D16622AAA8A36940DEB76931425E6 /* LEONBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEONBluetooth.release.xcconfig; sourceTree = "<group>"; };
+		75F9100B69AB795B22DE490DBEE591D2 /* Pods-LEONBluetooth_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEONBluetooth_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		77CBF4E12372DDB7B8B4F1EEBED70138 /* LEONBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEONBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		7C4180575D6CC4098522CA7F46103355 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8964B14A45FC298B306F3769175A8989 /* Pods-LEONBluetooth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEONBluetooth_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8B4F1662B51D8D5220DB75BBA3413877 /* Pods_LEONBluetooth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEONBluetooth_Tests.framework; path = "Pods-LEONBluetooth_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92618CC2938681725D22CBCD90367F19 /* Pods-LEONBluetooth_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEONBluetooth_Tests-Info.plist"; sourceTree = "<group>"; };
+		9C94285760AC59F6109774FB6762E471 /* LEONBluetooth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LEONBluetooth-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDF169B84C0C1DAB4E2B4E77DAA2C9F /* Pods-LEONBluetooth_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LEONBluetooth_Example-dummy.m"; sourceTree = "<group>"; };
+		9F44C7912A1DA58A362366322CA43A73 /* Pods-LEONBluetooth_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEONBluetooth_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2197AA7041F0C81A379DA3913252231 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A613125E5CCAFA0E1AC30F2254FA9FB1 /* Pods-LEONBluetooth_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LEONBluetooth_Example-Info.plist"; sourceTree = "<group>"; };
+		B0F6977F4A3D8029B1D2335016F18CD2 /* LEONBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEONBluetooth.debug.xcconfig; sourceTree = "<group>"; };
+		B1AA8BD140A2E706BB16C83A4188EB70 /* Pods_LEONBluetooth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LEONBluetooth_Example.framework; path = "Pods-LEONBluetooth_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB838BD7EDB049ECD1DB17F5340FB57C /* Pods-LEONBluetooth_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LEONBluetooth_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEDD4A53FADC0C9F2F61AD91ADF9F4D7 /* LEONBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEONBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		D404586E418F01CC4AE8C52F337999EB /* Pods-LEONBluetooth_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LEONBluetooth_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B628F47D5FF9150A168EB1542FD29D /* Pods-LEONBluetooth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEONBluetooth_Example.modulemap"; sourceTree = "<group>"; };
+		E014E40F60DDBC1F76B278DFECA94585 /* Pods-LEONBluetooth_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LEONBluetooth_Example-umbrella.h"; sourceTree = "<group>"; };
+		F315B1D9CAECB5B6A0ED9F768B11053A /* LEONBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEONBluetooth.framework; path = LEONBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33C2034B20D97D576DB2A3BD22855DF /* Pods-LEONBluetooth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LEONBluetooth_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B5533300ED4DE450BCBA2BF99BB1E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE871453EE41689413BA4AA6D90B20F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03BA6925CBE61B63069F2F2FE95377D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4ECFC8C60DDA34542C4CB5FC24A06E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11DEFDB4C8C262745CD2A8AF468B2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05592D4238DB324D2D9F3DDE3F6E0561 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A4AD0F07C3E2D3D01B6200BC2CB863 /* Pods-LEONBluetooth_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F33C2034B20D97D576DB2A3BD22855DF /* Pods-LEONBluetooth_Tests.modulemap */,
+				083D28B6840BF5DBD37B2B74AAB4930E /* Pods-LEONBluetooth_Tests-acknowledgements.markdown */,
+				9F44C7912A1DA58A362366322CA43A73 /* Pods-LEONBluetooth_Tests-acknowledgements.plist */,
+				2B6CA1336B83B603FE6893C26515BE9A /* Pods-LEONBluetooth_Tests-dummy.m */,
+				92618CC2938681725D22CBCD90367F19 /* Pods-LEONBluetooth_Tests-Info.plist */,
+				324099F9B8DEA7CC33DFFE514DF3AE17 /* Pods-LEONBluetooth_Tests-umbrella.h */,
+				D404586E418F01CC4AE8C52F337999EB /* Pods-LEONBluetooth_Tests.debug.xcconfig */,
+				19B335C01758819CE1D57504E69B13A7 /* Pods-LEONBluetooth_Tests.release.xcconfig */,
+			);
+			name = "Pods-LEONBluetooth_Tests";
+			path = "Target Support Files/Pods-LEONBluetooth_Tests";
+			sourceTree = "<group>";
+		};
+		1D7B0D31E9BDBA0296C0CE7F01777BCA /* Pods-LEONBluetooth_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D4B628F47D5FF9150A168EB1542FD29D /* Pods-LEONBluetooth_Example.modulemap */,
+				CB838BD7EDB049ECD1DB17F5340FB57C /* Pods-LEONBluetooth_Example-acknowledgements.markdown */,
+				75F9100B69AB795B22DE490DBEE591D2 /* Pods-LEONBluetooth_Example-acknowledgements.plist */,
+				9EDF169B84C0C1DAB4E2B4E77DAA2C9F /* Pods-LEONBluetooth_Example-dummy.m */,
+				2F97657282CC65878BF9E48A8C80E18B /* Pods-LEONBluetooth_Example-frameworks.sh */,
+				A613125E5CCAFA0E1AC30F2254FA9FB1 /* Pods-LEONBluetooth_Example-Info.plist */,
+				E014E40F60DDBC1F76B278DFECA94585 /* Pods-LEONBluetooth_Example-umbrella.h */,
+				0E5E6E2DE88FBE45014A0F8728692292 /* Pods-LEONBluetooth_Example.debug.xcconfig */,
+				8964B14A45FC298B306F3769175A8989 /* Pods-LEONBluetooth_Example.release.xcconfig */,
+			);
+			name = "Pods-LEONBluetooth_Example";
+			path = "Target Support Files/Pods-LEONBluetooth_Example";
+			sourceTree = "<group>";
+		};
+		7675234E9920F4663BD286D6CC0F35BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F315B1D9CAECB5B6A0ED9F768B11053A /* LEONBluetooth.framework */,
+				B1AA8BD140A2E706BB16C83A4188EB70 /* Pods_LEONBluetooth_Example.framework */,
+				8B4F1662B51D8D5220DB75BBA3413877 /* Pods_LEONBluetooth_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D64830D9F00D63C2BA24C27915B3309 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D7B0D31E9BDBA0296C0CE7F01777BCA /* Pods-LEONBluetooth_Example */,
+				02A4AD0F07C3E2D3D01B6200BC2CB863 /* Pods-LEONBluetooth_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A48825CE8C5E052AA599486B604E73B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32BD41A8E7C802F61CC65DF4CB7C430E /* LEONBluetooth.modulemap */,
+				4D2D19689201A815887A96ABEF1D067D /* LEONBluetooth-dummy.m */,
+				9C94285760AC59F6109774FB6762E471 /* LEONBluetooth-Info.plist */,
+				CEDD4A53FADC0C9F2F61AD91ADF9F4D7 /* LEONBluetooth-prefix.pch */,
+				77CBF4E12372DDB7B8B4F1EEBED70138 /* LEONBluetooth-umbrella.h */,
+				B0F6977F4A3D8029B1D2335016F18CD2 /* LEONBluetooth.debug.xcconfig */,
+				588D16622AAA8A36940DEB76931425E6 /* LEONBluetooth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LEONBluetooth";
+			sourceTree = "<group>";
+		};
+		B1CDD0157CDF4727717AC27318A0AA3B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E443081CF2D7F9C5D03C201153C54A04 /* LEONBluetooth */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B1CDD0157CDF4727717AC27318A0AA3B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7675234E9920F4663BD286D6CC0F35BE /* Products */,
+				8D64830D9F00D63C2BA24C27915B3309 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8688A95E20B91E70CEA26DB123099A2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				488A9F12B400ACAA1837F1003016C5C3 /* LEONBluetooth.podspec */,
+				A2197AA7041F0C81A379DA3913252231 /* LICENSE */,
+				7C4180575D6CC4098522CA7F46103355 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E443081CF2D7F9C5D03C201153C54A04 /* LEONBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				12CCDEE6EC796AD3D9B51303730799F0 /* LEONBluetooth.swift */,
+				D8688A95E20B91E70CEA26DB123099A2 /* Pod */,
+				A48825CE8C5E052AA599486B604E73B8 /* Support Files */,
+			);
+			name = LEONBluetooth;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A91DE289A2441D8C6C2425D6EFDFCDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BB70C3ECEEA3B2C8CA96B01D2A2270 /* LEONBluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94D17F68E6D8F8F36D7A90477187885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048006BDC3AA1B8C270F8142C067788D /* Pods-LEONBluetooth_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE44EC9793EC7CBF3A899BDE4B5AF333 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BA898DFF597D545100BB8206155387 /* Pods-LEONBluetooth_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1DF674DAB9540ADFDE971FFD2036E0E5 /* LEONBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82D2A516766569C6D5D7E840E7E4F06 /* Build configuration list for PBXNativeTarget "LEONBluetooth" */;
+			buildPhases = (
+				1A91DE289A2441D8C6C2425D6EFDFCDC /* Headers */,
+				13CE838282E53BA4CC02D7CAE204DDAD /* Sources */,
+				1B5533300ED4DE450BCBA2BF99BB1E04 /* Frameworks */,
+				16BD800E59FD0357F9FC2808C6C7D4A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEONBluetooth;
+			productName = LEONBluetooth;
+			productReference = F315B1D9CAECB5B6A0ED9F768B11053A /* LEONBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		536EDF6E19871855820E6460FC48B828 /* Pods-LEONBluetooth_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D18E7CE714A94C9E6E0CEA1C694901 /* Build configuration list for PBXNativeTarget "Pods-LEONBluetooth_Tests" */;
+			buildPhases = (
+				FE44EC9793EC7CBF3A899BDE4B5AF333 /* Headers */,
+				86F26036B1BDA46C2E2743D2A00D790D /* Sources */,
+				A03BA6925CBE61B63069F2F2FE95377D /* Frameworks */,
+				52CC4BB5CC508C027D13FD635038DAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4909EACB48B0AD03E47D4EB2E06F650C /* PBXTargetDependency */,
+			);
+			name = "Pods-LEONBluetooth_Tests";
+			productName = "Pods-LEONBluetooth_Tests";
+			productReference = 8B4F1662B51D8D5220DB75BBA3413877 /* Pods_LEONBluetooth_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6D0F68DD32A30702D7CCDAFBD722B4A /* Pods-LEONBluetooth_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52EEF93AF6E17FC502F2772E24DD854A /* Build configuration list for PBXNativeTarget "Pods-LEONBluetooth_Example" */;
+			buildPhases = (
+				A94D17F68E6D8F8F36D7A90477187885 /* Headers */,
+				21DDE5961B4466D3D1F3CCCDC49C1606 /* Sources */,
+				F11DEFDB4C8C262745CD2A8AF468B2CF /* Frameworks */,
+				BD7BC29F5B75B8F6DA1D06C284635CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC20AEC6EE5F4C003E0ABCC3DE4A756 /* PBXTargetDependency */,
+			);
+			name = "Pods-LEONBluetooth_Example";
+			productName = "Pods-LEONBluetooth_Example";
+			productReference = B1AA8BD140A2E706BB16C83A4188EB70 /* Pods_LEONBluetooth_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7675234E9920F4663BD286D6CC0F35BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DF674DAB9540ADFDE971FFD2036E0E5 /* LEONBluetooth */,
+				B6D0F68DD32A30702D7CCDAFBD722B4A /* Pods-LEONBluetooth_Example */,
+				536EDF6E19871855820E6460FC48B828 /* Pods-LEONBluetooth_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16BD800E59FD0357F9FC2808C6C7D4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CC4BB5CC508C027D13FD635038DAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7BC29F5B75B8F6DA1D06C284635CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13CE838282E53BA4CC02D7CAE204DDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF501DEB30CD02E2283BBF6AB439A679 /* LEONBluetooth-dummy.m in Sources */,
+				D12635AB120E2F218961F2535CD08413 /* LEONBluetooth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21DDE5961B4466D3D1F3CCCDC49C1606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CCA8257500383CFD69B9915798C692 /* Pods-LEONBluetooth_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F26036B1BDA46C2E2743D2A00D790D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E5D6651E391FE3F4DA699B576802FF /* Pods-LEONBluetooth_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC20AEC6EE5F4C003E0ABCC3DE4A756 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LEONBluetooth;
+			target = 1DF674DAB9540ADFDE971FFD2036E0E5 /* LEONBluetooth */;
+			targetProxy = 5B007CA7B6B6975C3762E51B697552E5 /* PBXContainerItemProxy */;
+		};
+		4909EACB48B0AD03E47D4EB2E06F650C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LEONBluetooth_Example";
+			target = B6D0F68DD32A30702D7CCDAFBD722B4A /* Pods-LEONBluetooth_Example */;
+			targetProxy = 2C85BD86DEE03D40F2B6EB6D7F2CDD9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		570EF11A4EB74521AE7B946636B5F991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B335C01758819CE1D57504E69B13A7 /* Pods-LEONBluetooth_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEONBluetooth_Tests/Pods-LEONBluetooth_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEONBluetooth_Tests/Pods-LEONBluetooth_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AA7FFB25BE727627D4470A6A313C860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5E6E2DE88FBE45014A0F8728692292 /* Pods-LEONBluetooth_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEONBluetooth_Example/Pods-LEONBluetooth_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEONBluetooth_Example/Pods-LEONBluetooth_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E8C0CA7FF5B88D0545757C6E69FA162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8964B14A45FC298B306F3769175A8989 /* Pods-LEONBluetooth_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEONBluetooth_Example/Pods-LEONBluetooth_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEONBluetooth_Example/Pods-LEONBluetooth_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AA1C6F2C161744350B2CCC2319150570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F6977F4A3D8029B1D2335016F18CD2 /* LEONBluetooth.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEONBluetooth/LEONBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEONBluetooth/LEONBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEONBluetooth/LEONBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = LEONBluetooth;
+				PRODUCT_NAME = LEONBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8F570C58DA07629063483348F68CFF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588D16622AAA8A36940DEB76931425E6 /* LEONBluetooth.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEONBluetooth/LEONBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEONBluetooth/LEONBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LEONBluetooth/LEONBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = LEONBluetooth;
+				PRODUCT_NAME = LEONBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7B5C483E934A30A13A4CF68F576CFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D404586E418F01CC4AE8C52F337999EB /* Pods-LEONBluetooth_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LEONBluetooth_Tests/Pods-LEONBluetooth_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LEONBluetooth_Tests/Pods-LEONBluetooth_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25D18E7CE714A94C9E6E0CEA1C694901 /* Build configuration list for PBXNativeTarget "Pods-LEONBluetooth_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B5C483E934A30A13A4CF68F576CFD0 /* Debug */,
+				570EF11A4EB74521AE7B946636B5F991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52EEF93AF6E17FC502F2772E24DD854A /* Build configuration list for PBXNativeTarget "Pods-LEONBluetooth_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA7FFB25BE727627D4470A6A313C860 /* Debug */,
+				6E8C0CA7FF5B88D0545757C6E69FA162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82D2A516766569C6D5D7E840E7E4F06 /* Build configuration list for PBXNativeTarget "LEONBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1C6F2C161744350B2CCC2319150570 /* Debug */,
+				B8F570C58DA07629063483348F68CFF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

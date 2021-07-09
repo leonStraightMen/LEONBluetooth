@@ -1,0 +1,16 @@
+PODS:
+  - LEONBluetooth (0.1.0)
+
+DEPENDENCIES:
+  - LEONBluetooth (from `../`)
+
+EXTERNAL SOURCES:
+  LEONBluetooth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEONBluetooth: 4c8c1163fde1e32b38101e57d940861354567878
+
+PODFILE CHECKSUM: c8223cd1d9d455ed67eb3165dfee366feafe81f3
+
+COCOAPODS: 1.9.3

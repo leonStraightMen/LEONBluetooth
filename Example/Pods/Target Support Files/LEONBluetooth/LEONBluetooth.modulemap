@@ -1,0 +1,6 @@
+framework module LEONBluetooth {
+  umbrella header "LEONBluetooth-umbrella.h"
+
+  export *
+  module * { export * }
+}
