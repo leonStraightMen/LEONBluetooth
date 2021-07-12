@@ -1,4 +1,6 @@
 # LEONBluetooth
+可同时连接两台蓝牙外设
+用closure回调的方式统一处理delegate数据
 
 [![CI Status](https://img.shields.io/travis/leonStraightMen/LEONBluetooth.svg?style=flat)](https://travis-ci.org/leonStraightMen/LEONBluetooth)
 [![Version](https://img.shields.io/cocoapods/v/LEONBluetooth.svg?style=flat)](https://cocoapods.org/pods/LEONBluetooth)
