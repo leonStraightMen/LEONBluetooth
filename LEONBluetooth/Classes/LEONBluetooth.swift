@@ -10,7 +10,7 @@ import CoreBluetooth
 import UIKit
 
 //设备类型
-enum DEVICE_TYPE : Int {
+public enum DEVICE_TYPE : Int {
     case TYPEMAIN//主设备
     case TYPEVICE //副设备
 }
@@ -19,60 +19,60 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
 
     // MARK: ------------------- 闭包的定义 --------------------------
     /// 蓝牙状态改变的block
-    typealias LEStateUpdateBlock = (CBCentralManager) -> Void
+    public typealias LEStateUpdateBlock = (CBCentralManager) -> Void
     /// 发现一个蓝牙外设的block
-    typealias LEDiscoverPeripheralBlock = (CBCentralManager, CBPeripheral, NSNumber) -> Void
+    public typealias LEDiscoverPeripheralBlock = (CBCentralManager, CBPeripheral, NSNumber) -> Void
     ///// 连接完成的block,失败error就不为nil
     //typedef void(^LEConnectCompletionBlock)(CBPeripheral *peripheral, NSError *error);
 
     /// 蓝牙连接成功的回调
-    typealias LEBluedConnectSuccessfulBlock = (CBPeripheral) -> Void
+    public typealias LEBluedConnectSuccessfulBlock = (CBPeripheral) -> Void
     /// 蓝牙链接失败的回调
-    typealias LEBluedConnectFailureBlock = (CBPeripheral) -> Void
+    public typealias LEBluedConnectFailureBlock = (CBPeripheral) -> Void
     /// 蓝牙链接已经断开的回调
-    typealias LEBluedIsDisConnectBlock = (CBPeripheral) -> Void
+    public typealias LEBluedIsDisConnectBlock = (CBPeripheral) -> Void
     
     /// 搜索到服务block
-    typealias LEDiscoveredServicesBlock = (CBPeripheral, [CBService]) -> Void
+    public typealias LEDiscoveredServicesBlock = (CBPeripheral, [CBService]) -> Void
     /// 搜索到某个服务中的特性的block
-    typealias LEDiscoverCharacteristicsBlock = (CBPeripheral, CBService, [CBCharacteristic]) -> Void
+    public typealias LEDiscoverCharacteristicsBlock = (CBPeripheral, CBService, [CBCharacteristic]) -> Void
     
     /// 收到摸个特性中数据的回调
-    typealias LEReadValueForCharacteristicBlock = (CBPeripheral, CBCharacteristic, Data) -> Void
+    public typealias LEReadValueForCharacteristicBlock = (CBPeripheral, CBCharacteristic, Data) -> Void
     /// 往特性中写入数据的回调
-    typealias LEWriteToCharacteristicBlock = (CBPeripheral?, CBCharacteristic?) -> Void
+    public typealias LEWriteToCharacteristicBlock = (CBPeripheral?, CBCharacteristic?) -> Void
 
     //蓝牙外设
-    var stateUpdateBlock: LEStateUpdateBlock?
-    var discoverPeripheralBlock: LEDiscoverPeripheralBlock?
+    public var stateUpdateBlock: LEStateUpdateBlock?
+    public var discoverPeripheralBlock: LEDiscoverPeripheralBlock?
     //链接状态
-    var connectSuccessfulBlock: LEBluedConnectSuccessfulBlock?
-    var connectFailureBlock: LEBluedConnectFailureBlock?
-    var disConnectBlock: LEBluedIsDisConnectBlock?
+    public var connectSuccessfulBlock: LEBluedConnectSuccessfulBlock?
+    public var connectFailureBlock: LEBluedConnectFailureBlock?
+    public var disConnectBlock: LEBluedIsDisConnectBlock?
     //蓝牙数据
-    var discoveredServicesBlock: LEDiscoveredServicesBlock? //
-    var discoverCharacteristicsBlock: LEDiscoverCharacteristicsBlock?
-    var readValueForCharacteristicBlock: LEReadValueForCharacteristicBlock?
-    var writeToCharacteristicBlock: LEWriteToCharacteristicBlock? //
+    public var discoveredServicesBlock: LEDiscoveredServicesBlock? //
+    public var discoverCharacteristicsBlock: LEDiscoverCharacteristicsBlock?
+    public var readValueForCharacteristicBlock: LEReadValueForCharacteristicBlock?
+    public var writeToCharacteristicBlock: LEWriteToCharacteristicBlock? //
 
-    var peripheral: CBPeripheral? //主设备
-    var vicePeripheral: CBPeripheral? //副设备
+    public var peripheral: CBPeripheral? //主设备
+    public var vicePeripheral: CBPeripheral? //副设备
 
     //主设备 写入数据的特征 读取数据的特征
-    var write: CBCharacteristic?
-    var read: CBCharacteristic?
+    public var write: CBCharacteristic?
+    public var read: CBCharacteristic?
     //副设备 写入数据的特征 读取数据的特征
-    var viceWrite: CBCharacteristic?
-    var viceRead: CBCharacteristic?
+    public var viceWrite: CBCharacteristic?
+    public var viceRead: CBCharacteristic?
     
     //单例
-    static let singleton = LEONBluetooth()
+    public static let singleton = LEONBluetooth()
 
     //中心外设
     public var manager: CBCentralManager!
-
+    
     //call init inity overring
-    func initCBCenterManager(){
+    public func initCBCenterManager(){
 //        manager = CBCentralManager.init(delegate: self, queue:.main)
         manager = CBCentralManager.init(delegate: self, queue: .main, options: [CBCentralManagerOptionShowPowerAlertKey:true])
     }
@@ -102,7 +102,7 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
             self.stateUpdateBlock!(central)
         }
                  
-      }
+    }
     
     //扫描发现外设
     public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber){
@@ -119,6 +119,7 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
     
     //已经建立连接
     public func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral){
+        
         if self.connectSuccessfulBlock != nil{
             self.connectSuccessfulBlock!(peripheral)
             
@@ -133,7 +134,7 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
         }
 
     }
-
+//import FacebookLogin
     //连接失败
     public func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?){
         if self.connectFailureBlock != nil && error == nil{
@@ -226,7 +227,7 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
     
     // MARK: ------------------- 外部操作 --------------------------
     //建立蓝牙连接 在这里开始区分链接的哪台外设
-    func conntectPeripheral(peripheral: CBPeripheral,type:DEVICE_TYPE){
+    public func conntectPeripheral(peripheral: CBPeripheral,type:DEVICE_TYPE){
         
         if type == .TYPEMAIN {
             self.peripheral = peripheral
@@ -239,7 +240,7 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
     }
     
     //断开蓝牙连接
-    func disConntectPeripheral(peripheral: CBPeripheral,type:DEVICE_TYPE){
+    public func disConntectPeripheral(peripheral: CBPeripheral,type:DEVICE_TYPE){
         if type == .TYPEMAIN {
             self.manager.cancelPeripheralConnection(self.peripheral!)
 //            self.peripheral?.delegate = nil
