@@ -179,47 +179,47 @@ public class LEONBluetooth:UIViewController,CBCentralManagerDelegate, CBPeripher
             if self.discoverCharacteristicsBlock != nil && error == nil {
                 self.discoverCharacteristicsBlock!(peripheral,service,service.characteristics!)
                 
-                    //遍历特征--->>这里可以写在外部
-                    for  cha in service.characteristics!{
-
-                        if cha.properties.rawValue == 16 {//读取设备1...n 的特征值 == 16
-                            
-                            if peripheral == self.peripheral {//设备1
-                                self.read = cha
-                                self.peripheral!.readValue(for: self.read!)
-                                self.peripheral!.setNotifyValue(true, for: self.read!)
-                                
-                            }else  if peripheral == self.peripheral {//设备2
-                                self.viceRead = cha
-                                self.vicePeripheral!.readValue(for: self.viceRead!)
-                                self.vicePeripheral!.setNotifyValue(true, for: self.viceRead!)
-                            }
-                            
-                        }else if cha.properties.rawValue == 12 {//写的特征值 == 12
-                            
-                            if peripheral == self.peripheral {//设备1
-                                self.write = cha
-                            }else  if peripheral == self.peripheral{//设备2
-                                self.viceWrite = cha
-                                
-                            }
-                       }
-                        
-                  }
+//                    //接收特征值
+//                    for  cha in service.characteristics!{
+//
+//                        if cha.properties.rawValue == 16 {//读取设备1...n 的特征值 == 16
+//                            
+//                            if peripheral == self.peripheral {//设备1
+//                                self.read = cha
+//                                self.peripheral!.readValue(for: self.read!)
+//                                self.peripheral!.setNotifyValue(true, for: self.read!)
+//                                
+//                            }else  if peripheral == self.vicePeripheral {//设备2
+//                                self.viceRead = cha
+//                                self.vicePeripheral!.readValue(for: self.viceRead!)
+//                                self.vicePeripheral!.setNotifyValue(true, for: self.viceRead!)
+//                            }
+//                            
+//                        }else if cha.properties.rawValue == 12 {//写的特征值 == 12
+//                            
+//                            if peripheral == self.peripheral {//设备1
+//                                self.write = cha
+//                            }else  if peripheral == self.vicePeripheral{//设备2
+//                                self.viceWrite = cha
+//                                
+//                            }
+//                       }
+//                        
+//                  }
                 
             }
     }
 
     //读取特征的数据
     public func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?){
-        if self.readValueForCharacteristicBlock != nil {
+        if self.readValueForCharacteristicBlock != nil && characteristic.value != nil{
             self.readValueForCharacteristicBlock!(peripheral,characteristic,characteristic.value!)
         }
     }
     
     //发送数据成功的回调
     public func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?){
-        if self.writeToCharacteristicBlock != nil {
+        if self.writeToCharacteristicBlock != nil && characteristic.value != nil{
                 self.writeToCharacteristicBlock!(peripheral,characteristic)
         }
     }

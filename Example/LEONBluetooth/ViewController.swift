@@ -46,8 +46,10 @@ class ViewController: UIViewController {
 //            print("发现蓝牙外设 \(peripheral)")
             if let name = peripheral.name,name .hasPrefix("SH_"){
                 singleton.conntectPeripheral(peripheral: peripheral, type:.TYPEMAIN)
+                print("设备一：发起链接")
             }else  if let name = peripheral.name,name .hasPrefix("SH_2"){
                 singleton.conntectPeripheral(peripheral: peripheral, type:.TYPEVICE)
+                print("设备二：发起链接")
             }
         }
         
@@ -55,9 +57,9 @@ class ViewController: UIViewController {
         singleton.connectSuccessfulBlock = {
             (peripheral:CBPeripheral) -> Void in
             if peripheral == singleton.peripheral {
-                print("设备一：链接成功")
+                print("设备一：链接成功 \(peripheral)")
             }else if peripheral == singleton.vicePeripheral {
-                print("设备二：链接成功")
+                print("设备二：链接成功 \(peripheral)")
             }
         }
         
@@ -94,11 +96,42 @@ class ViewController: UIViewController {
         //发现特征
         singleton.discoverCharacteristicsBlock = {
             (peripheral:CBPeripheral,service:CBService, characteristic:[CBCharacteristic]) -> Void in
-            if peripheral == singleton.peripheral {
-                print("设备一: 发现特征 \(characteristic)")
-            }else if peripheral == singleton.vicePeripheral {
-                print("设备二: 发现特征 \(characteristic)")
-            }
+            
+            //接收并且保存特质值
+            for  cha in service.characteristics!{
+
+                if cha.properties.rawValue == 16 {//读取设备1...n 的特征值 == 16
+                    
+                    if peripheral == singleton.peripheral {//设备1
+                        print("设备一: 发现 - 读取特征 \(characteristic)")
+                        singleton.read = cha
+                        singleton.peripheral!.readValue(for: singleton.read!)
+                        singleton.peripheral!.setNotifyValue(true, for: singleton.read!)
+                        
+                    }else  if peripheral == singleton.vicePeripheral {//设备2
+                        singleton.viceRead = cha
+                        singleton.vicePeripheral!.readValue(for: singleton.viceRead!)
+                        singleton.vicePeripheral!.setNotifyValue(true, for: singleton.viceRead!)
+                        print("设备二: 发现 - 读取特征 \(characteristic)")
+
+                    }
+                    
+                }else if cha.properties.rawValue == 12 {//写的特征值 == 12
+                    
+                    if peripheral == singleton.peripheral {//设备1
+                        print("设备一: 发现 - 写入特征 \(characteristic)")
+
+                        singleton.write = cha
+                    }else  if peripheral == singleton.vicePeripheral{//设备2
+                        singleton.viceWrite = cha
+                        print("设备二: 发现 - 写入特征 \(characteristic)")
+
+                    }
+               }
+                
+          }
+            
+       
         }
 
         //读取特征的数据
@@ -121,7 +154,7 @@ class ViewController: UIViewController {
         //测试写入数据
         let bytes:[UInt8] = [0xaa,0x06,0xf9,0xA2,0x1,0x4c]
         let data = NSData(bytes: bytes, length: bytes.count)
-        print("发送数据 \(data)")
+        print("设备一:发送数据 \(data)")
         //单例
         let singleton = LEONBluetooth.singleton
         singleton.peripheral?.writeValue(data as Data, for: singleton.write!, type:.withResponse)
@@ -135,9 +168,12 @@ class ViewController: UIViewController {
         let singleton = LEONBluetooth.singleton
         if singleton.peripheral != nil {
             singleton.disConntectPeripheral(peripheral:singleton.peripheral!, type: .TYPEMAIN)
+            print("设备一:断开链接")
         }
         if singleton.vicePeripheral != nil {
             singleton.disConntectPeripheral(peripheral:singleton.vicePeripheral!, type: .TYPEVICE)
+            print("设备二:断开链接")
+
         }
     }
     
